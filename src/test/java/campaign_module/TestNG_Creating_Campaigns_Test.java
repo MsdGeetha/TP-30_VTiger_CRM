@@ -50,7 +50,6 @@ public class TestNG_Creating_Campaigns_Test extends BaseClass {
 		cvm.verifyCampaigCreated(campaignname);
 		
 		System.out.println("======================Creating_Campaigns_Complete 4======================");
-		System.out.println("hi");
 	}
 }
 
