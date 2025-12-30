@@ -12,7 +12,7 @@ public class Batch_Test1 {
 		System.out.println("display1() from Parallel_Test1 - Smoke");
 	}
 	
-	@Test(groups = "Regression",retryAnalyzer = generic_libraries.RetryImplementationClass.class)
+	@Test(groups = "Regression")
 	public void display2() {
 //		Assert.fail();
 		System.out.println("display2() from Parallel_Test1 - Regression");
