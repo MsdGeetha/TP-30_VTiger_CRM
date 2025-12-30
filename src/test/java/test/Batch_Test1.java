@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import generic_libraries.BaseClass;
 
 
-public class Batch_Test1 extends BaseClass {
+public class Batch_Test1 {
 	@Test(groups = "Smoke")
 	public void display1() {
 //		Assert.fail("Testing");
