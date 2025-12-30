@@ -81,6 +81,7 @@
 				        <version>3.5.4</version>
 				        <configuration>
 <!--				          Batch execution -->
+
 				          <suiteXmlFiles>
 				            <suiteXmlFile>batchexecution.xml</suiteXmlFile>
 				          </suiteXmlFiles>
