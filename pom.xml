@@ -50,27 +50,27 @@
 </dependencies>
 
 <!-- Group execution -->
-<!--<profiles>-->
-<!--	<profile>-->
-<!--	<id> sm </id>-->
-<!--		<build>-->
-<!--			<pluginManagement>-->
-<!--				<plugins>-->
-<!--				      <plugin>-->
-<!--				        <groupId>org.apache.maven.plugins</groupId>-->
-<!--				        <artifactId>maven-surefire-plugin</artifactId>-->
-<!--				        <version>3.5.4</version>-->
-<!--				        <configuration>-->
-<!--				          <suiteXmlFiles>-->
-<!--				            <suiteXmlFile>groupExecution.xml</suiteXmlFile>-->
-<!--				          </suiteXmlFiles>-->
-<!--				        </configuration>-->
-<!--				      </plugin>-->
-<!--				</plugins>-->
-<!--			</pluginManagement>-->
-<!--		</build>-->
-<!--	</profile>-->
-<!--</profiles>-->
+<profiles>
+	<profile>
+	<id> sm </id>
+		<build>
+			<pluginManagement>
+				<plugins>
+				      <plugin>
+				        <groupId>org.apache.maven.plugins</groupId>
+				        <artifactId>maven-surefire-plugin</artifactId>
+				        <version>3.5.4</version>
+				        <configuration>
+				          <suiteXmlFiles>
+				            <suiteXmlFile>groupExecution.xml</suiteXmlFile>
+				          </suiteXmlFiles>
+				        </configuration>
+				      </plugin>
+				</plugins>
+			</pluginManagement>
+		</build>
+	</profile>
+</profiles>
 
 <build>
 	<pluginManagement>
