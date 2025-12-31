@@ -9,6 +9,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ReadDataFromCmdLine_Test {
 	@Test
 	public void cmdLine() {
@@ -33,8 +35,9 @@ public class ReadDataFromCmdLine_Test {
 		}
 		
 		else if (browser.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
-		      
+//			driver = new FirefoxDriver();
+			WebDriverManager.firefoxdriver().setup();
+	        driver = new FirefoxDriver();
 		       System.out.println("FireFox is lunched");
 		}
 		else if(browser.equalsIgnoreCase("edge")){
