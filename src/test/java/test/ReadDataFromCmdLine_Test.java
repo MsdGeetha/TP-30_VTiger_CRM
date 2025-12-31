@@ -11,11 +11,12 @@ public class ReadDataFromCmdLine_Test {
 	public void cmdLine() {
 	
 		String browser = System.getProperty("browser");
+
 //		String url = System.getProperty("url");
 //		String username = System.getProperty("username");
 //		String password = System.getProperty("password");
 //		
-//		System.out.println("browser = "+browser);
+		System.out.println("browser = "+browser);
 //		System.out.println("url = "+url);
 //		System.out.println("username = "+username);
 //		System.out.println("password = "+password);
@@ -28,18 +29,18 @@ public class ReadDataFromCmdLine_Test {
 //			driver.manage().window().maximize();
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
-		else if (browser.equalsIgnoreCase("Edge")) {
-			System.setProperty(
-		            "webdriver.edge.driver",
-		            "C:\\Drivers\\msedgedriver.exe"
-		        );
-
-		       driver = new EdgeDriver();
-		       System.out.println("Edge is lunched");
+		else if (browser.equalsIgnoreCase("firefox")) {
+//			System.setProperty(
+//		            "webdriver.edge.driver",
+//		            "C:\\Drivers\\msedgedriver.exe"
+//		        );
+			driver = new FirefoxDriver();
+		      
+		       System.out.println("FireFox is lunched");
 		}
 		else {
-			driver = new FirefoxDriver();
-			System.out.println("Firefox is lunched");
+			 driver = new EdgeDriver();
+			System.out.println("Edge is lunched");
 		}
 //		driver.get(url);
 //		driver.findElement(By.name("user_name")).sendKeys(username);
