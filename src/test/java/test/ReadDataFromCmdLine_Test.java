@@ -36,8 +36,10 @@ public class ReadDataFromCmdLine_Test {
 		
 		else if (browser.equalsIgnoreCase("firefox")) {
 //			driver = new FirefoxDriver();
-			WebDriverManager.firefoxdriver().setup();
-	        driver = new FirefoxDriver();
+//			WebDriverManager.firefoxdriver().setup();
+			WebDriverManager.getInstance(FirefoxDriver.class).setup();
+	        WebDriver driver2 = new FirefoxDriver();
+//	        driver = new FirefoxDriver();
 		       System.out.println("FireFox is lunched");
 		}
 		else if(browser.equalsIgnoreCase("edge")){
